@@ -1,0 +1,84 @@
+html {
+  font-size: 62.5%; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  padding: 2rem 3rem;
+  background-color: #f6f6f6; }
+  body ::-moz-focus-inner {
+    border: 0; }
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem 3rem;
+  background: #833471;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.6); }
+  .container .appName {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 3rem; }
+  .container .taskList {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600; }
+  .container .form-1 {
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .container .form-1 #taskInput {
+      outline: none !important;
+      border: none;
+      background-color: #a1408b;
+      padding: 0.7rem 1.2rem;
+      color: #ccc;
+      border-radius: 0.2rem;
+      font-size: 1.3rem; }
+      .container .form-1 #taskInput:focus {
+        -webkit-appearance: none;
+        border-bottom: 2px solid #ccc; }
+      .container .form-1 #taskInput:placeholder-shown ~ #taskLabel {
+        transform: translateY(-100%);
+        padding: 0.6rem 1.2rem;
+        color: #bbb;
+        font-weight: 600; }
+      .container .form-1 #taskInput:focus ~ #taskLabel {
+        transform: translateY(-200%);
+        padding: 0.6rem 0rem;
+        color: #fff; }
+    .container .form-1 #taskLabel {
+      padding: 0.6rem 1.2rem;
+      font-size: 1.2rem;
+      color: #fff;
+      transform: translateY(-200%);
+      pointer-events: none;
+      transition: all 0.25s linear; }
+    .container .form-1 #taskSubmit {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0.6rem 1rem;
+      border: none;
+      background-color: #B53471;
+      color: #fff;
+      width: 30%;
+      border-radius: 0.3rem;
+      transition: all 0.15s linear; }
+      .container .form-1 #taskSubmit:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+        background-color: #dc3c87; }
+      .container .form-1 #taskSubmit:active {
+        transform: translateY(0.2rem);
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0); }
