@@ -6,6 +6,7 @@
     <title>TODO TaskList</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/317f611a58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,13 +14,42 @@
     <div class="container">
         <h1 class="appName">LIST APP</h1>
         <div class="addTask">
-            <h3 class="taskList">Task List</h3>
+            <h3 class="newTask">New Task</h3>
             <form action="" class="form-1">
                 <input type="text" name="task" id="taskInput" required placeholder=" " autocomplete="off">
                 <label id="taskLabel" for="task">New Task</label>
                 <button id="taskSubmit" type="submit">Add Task</button>
             </form>
         </div>
+        <div class="displayTask">
+            <div class="displayHead">
+                <h3 class="taskList">All Tasks</h3>
+                <div class="searchBox">
+                    <input type="text" name="search" id="searchInput" required placeholder=" " autocomplete="off">
+                    <label id="searchLabel" for="search">Search</label>
+                </div>
+               
+
+            </div>
+            
+            <h6 class="taskHeading">Tasks</h6>
+            <ul class="list">
+                <li class="list-item">
+                    Walk
+                    <a href="" class="item-link">
+                        <i class="fa fa-remove delete-item"></i>
+                    </a>
+                </li>
+                <li class="list-item">
+                    Walk
+                    <a href="" class="item-link">
+                        <i class="fa fa-remove delete-item"></i>
+                    </a>
+                </li>
+                <button class="clearTasks" type="submit">Clear Tasks</button>
+            </ul>
+        </div>
+
     </div>
     
 </body>
