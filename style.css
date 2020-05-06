@@ -175,7 +175,6 @@ body {
       border: none;
       background-color: #833471;
       color: #fff;
-      width: 30%;
       border-radius: 0.3rem;
       transition: all 0.15s linear; }
       .container .displayTask .clearTasks:hover {
