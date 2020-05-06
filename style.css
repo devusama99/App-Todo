@@ -1,5 +1,11 @@
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 56.5%; } }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 50.5%; } }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -19,10 +25,8 @@ body {
   margin: auto;
   overflow: hidden;
   background: #833471;
-  border-radius: 0.5rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.6); }
+  border-radius: 2rem;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.4); }
   .container .appName {
     text-align: center;
     font-weight: 700;
