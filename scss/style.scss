@@ -161,10 +161,10 @@ body
             }
             #searchLabel
             {
-                padding: 1rem 1.2rem;
+                padding: 1rem 0rem;
                 font-size: 1.3rem;
                 color: $primary-color ;  
-                transform: translateY(-100%);          
+                transform: translateY(-200%);         
                 pointer-events: none;
                 transition: all 0.25s linear;
             }
