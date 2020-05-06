@@ -123,6 +123,7 @@ function taskAdded(e)
         li.appendChild(link)
         list.appendChild(li)     
         addTaskLs()  
+        taskInput.value = ''
         alert('Task Added Successfully')
 
     }

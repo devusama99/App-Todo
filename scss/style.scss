@@ -234,7 +234,7 @@ body
             justify-content: space-between;
             transform: scaleX(0);
             align-items: center;
-            animation: listTaskAnimation 0.3s forwards;
+            animation: listTaskAnimation 0.5s forwards;
             transition: all 0.2s linear;
             &:not(:last-child)
             {
